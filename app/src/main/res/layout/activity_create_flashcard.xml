@@ -11,12 +11,12 @@
         android:id="@+id/createTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/transparent_blurred_rectangle"
         android:fontFamily="serif"
         android:paddingStart="24dp"
-        android:paddingEnd="24dp"
         android:paddingTop="8dp"
+        android:paddingEnd="24dp"
         android:paddingBottom="8dp"
         android:text="Create Flashcards"
         android:textColor="@color/black"
@@ -40,6 +40,8 @@
             android:padding="16dp">
 
             <!-- Deck Name Input -->
+
+            <!-- Container for Dynamic Flashcards -->
             <EditText
                 android:id="@+id/deckNameInput"
                 android:layout_width="match_parent"
@@ -51,7 +53,6 @@
                 android:textColor="@color/white"
                 android:textColorHint="#B0FFFFFF" />
 
-            <!-- Container for Dynamic Flashcards -->
             <LinearLayout
                 android:id="@+id/flashcardListContainer"
                 android:layout_width="match_parent"

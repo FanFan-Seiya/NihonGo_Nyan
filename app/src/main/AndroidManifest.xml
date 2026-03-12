@@ -29,6 +29,12 @@
         <activity
             android:name=".BasicAlphabetActivity"
             android:exported="false" />
+        <activity
+            android:name=".LessonListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuizModeActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

@@ -61,6 +61,8 @@ class SecondActivity : AppCompatActivity() {
         // --- Dashboard Navigation & Button Logic ---
         val createIntent = Intent(this, CreateFlashcardActivity::class.java)
         val alphabetIntent = Intent(this, BasicAlphabetActivity::class.java)
+        val lessonIntent = Intent(this, LessonListActivity::class.java)
+        val quizIntent = Intent(this, QuizModeActivity::class.java)
 
         // Flashcards
         findViewById<MaterialCardView>(R.id.cardCreateFlashcard).setOnClickListener { startActivity(createIntent) }
@@ -70,12 +72,13 @@ class SecondActivity : AppCompatActivity() {
         findViewById<MaterialCardView>(R.id.cardBasicAlphabet).setOnClickListener { startActivity(alphabetIntent) }
         findViewById<Button>(R.id.btnBasicAlphabet).setOnClickListener { startActivity(alphabetIntent) }
 
-        // Other buttons with coming soon messages
-        findViewById<MaterialCardView>(R.id.cardLessonList).setOnClickListener { Toast.makeText(this, "Lessons coming soon!", Toast.LENGTH_SHORT).show() }
-        findViewById<Button>(R.id.btnLessonList).setOnClickListener { Toast.makeText(this, "Lessons coming soon!", Toast.LENGTH_SHORT).show() }
+        // Lesson List
+        findViewById<MaterialCardView>(R.id.cardLessonList).setOnClickListener { startActivity(lessonIntent) }
+        findViewById<Button>(R.id.btnLessonList).setOnClickListener { startActivity(lessonIntent) }
         
-        findViewById<MaterialCardView>(R.id.cardQuizMode).setOnClickListener { Toast.makeText(this, "Quiz coming soon!", Toast.LENGTH_SHORT).show() }
-        findViewById<Button>(R.id.btnQuizMode).setOnClickListener { Toast.makeText(this, "Quiz coming soon!", Toast.LENGTH_SHORT).show() }
+        // Quiz Mode
+        findViewById<MaterialCardView>(R.id.cardQuizMode).setOnClickListener { startActivity(quizIntent) }
+        findViewById<Button>(R.id.btnQuizMode).setOnClickListener { startActivity(quizIntent) }
     }
 
     override fun onDestroy() {

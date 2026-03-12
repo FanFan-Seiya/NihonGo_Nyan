@@ -61,15 +61,18 @@ class CreateFlashcardActivity : AppCompatActivity() {
                     true
                 }
                 R.id.nav_lessons -> {
-                    Toast.makeText(this, "Lessons coming soon!", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, LessonListActivity::class.java))
+                    finish()
                     true
                 }
                 R.id.nav_quiz -> {
-                    Toast.makeText(this, "Quiz coming soon!", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, QuizModeActivity::class.java))
+                    finish()
                     true
                 }
                 R.id.nav_alphabet -> {
-                    Toast.makeText(this, "Alphabet coming soon!", Toast.LENGTH_SHORT).show()
+                    startActivity(Intent(this, BasicAlphabetActivity::class.java))
+                    finish()
                     true
                 }
                 R.id.nav_decks -> true // Already here

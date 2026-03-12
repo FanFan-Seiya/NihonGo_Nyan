@@ -2,16 +2,17 @@ package com.example.myapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class BasicAlphabetActivity : AppCompatActivity() {
+class QuizModeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_basic_alphabet)
+        setContentView(R.layout.activity_quiz_mode)
 
         val bottomNavigation = findViewById<BottomNavigationView>(R.id.bottomNavigation)
-        bottomNavigation.selectedItemId = R.id.nav_alphabet
+        bottomNavigation.selectedItemId = R.id.nav_quiz
 
         bottomNavigation.setOnItemSelectedListener { item ->
             when (item.itemId) {
@@ -25,12 +26,12 @@ class BasicAlphabetActivity : AppCompatActivity() {
                     finish()
                     true
                 }
-                R.id.nav_quiz -> {
-                    startActivity(Intent(this, QuizModeActivity::class.java))
+                R.id.nav_quiz -> true // Already here
+                R.id.nav_alphabet -> {
+                    startActivity(Intent(this, BasicAlphabetActivity::class.java))
                     finish()
                     true
                 }
-                R.id.nav_alphabet -> true // Already here
                 R.id.nav_decks -> {
                     startActivity(Intent(this, CreateFlashcardActivity::class.java))
                     finish()
