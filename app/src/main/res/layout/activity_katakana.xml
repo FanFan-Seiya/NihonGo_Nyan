@@ -5,63 +5,309 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#1A1A1A"
-    android:padding="20dp"
     tools:context=".KatakanaActivity">
 
     <!-- Header Area -->
-    <TextView
-        android:id="@+id/stylizedNumber"
-        android:layout_width="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/headerArea"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:includeFontPadding="false"
-        android:text="カタカナ"
-        android:textColor="#C1AB85"
-        android:textSize="50sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="20dp"
+        app:layout_constraintTop_toTopOf="parent">
 
-    <TextView
-        android:id="@+id/inspirationLabel"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="8dp"
-        android:text="Alphabet"
-        android:textColor="#5E5E5E"
-        android:textSize="14sp"
-        app:layout_constraintStart_toEndOf="@id/stylizedNumber"
-        app:layout_constraintTop_toTopOf="@id/stylizedNumber" />
+        <TextView
+            android:id="@+id/stylizedNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="ア"
+            android:textColor="#3E6868"
+            android:textSize="60sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/mainTitle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Katakana"
-        android:textColor="#FFFFFF"
-        android:textSize="28sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toStartOf="@id/inspirationLabel"
-        app:layout_constraintTop_toBottomOf="@id/inspirationLabel" />
+        <TextView
+            android:id="@+id/inspirationLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            android:text="Study Guide"
+            android:textColor="#5E5E5E"
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@id/stylizedNumber"
+            app:layout_constraintTop_toTopOf="@id/stylizedNumber" />
+
+        <TextView
+            android:id="@+id/mainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Katakana Chart"
+            android:textColor="#FFFFFF"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/inspirationLabel"
+            app:layout_constraintTop_toBottomOf="@id/inspirationLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="16dp"
+        android:clipToPadding="false"
+        android:paddingHorizontal="12dp"
+        android:paddingBottom="24dp"
         app:layout_constraintBottom_toTopOf="@id/bottomNavigation"
-        app:layout_constraintTop_toBottomOf="@id/stylizedNumber">
+        app:layout_constraintTop_toBottomOf="@id/headerArea">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
-            <!-- Katakana Content Here -->
+
+            <!-- GOJUON Section -->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Learning Content for Katakana..."
-                android:textColor="#FFFFFF" />
+                style="@style/SectionHeaderStyle"
+                android:text="gojūon" />
+
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="6">
+                    <!-- Header -->
+                    <TextView style="@style/GridHeaderStyle" android:text="" />
+                    <TextView style="@style/GridHeaderStyle" android:text="a-column" />
+                    <TextView style="@style/GridHeaderStyle" android:text="i-column" />
+                    <TextView style="@style/GridHeaderStyle" android:text="u-column" />
+                    <TextView style="@style/GridHeaderStyle" android:text="e-column" />
+                    <TextView style="@style/GridHeaderStyle" android:text="o-column" />
+
+                    <!-- a-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="a-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ア\na" />
+                    <TextView style="@style/GridCharStyle" android:text="イ\ni" />
+                    <TextView style="@style/GridCharStyle" android:text="ウ\nu" />
+                    <TextView style="@style/GridCharStyle" android:text="エ\ne" />
+                    <TextView style="@style/GridCharStyle" android:text="オ\no" />
+
+                    <!-- ka-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="ka-row" />
+                    <TextView style="@style/GridCharStyle" android:text="カ\nka" />
+                    <TextView style="@style/GridCharStyle" android:text="キ\nki" />
+                    <TextView style="@style/GridCharStyle" android:text="ク\nku" />
+                    <TextView style="@style/GridCharStyle" android:text="ケ\nke" />
+                    <TextView style="@style/GridCharStyle" android:text="コ\nko" />
+
+                    <!-- sa-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="sa-row" />
+                    <TextView style="@style/GridCharStyle" android:text="サ\nsa" />
+                    <TextView style="@style/GridCharStyle" android:text="シ\nshi" />
+                    <TextView style="@style/GridCharStyle" android:text="ス\nsu" />
+                    <TextView style="@style/GridCharStyle" android:text="セ\nse" />
+                    <TextView style="@style/GridCharStyle" android:text="ソ\nso" />
+
+                    <!-- ta-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="ta-row" />
+                    <TextView style="@style/GridCharStyle" android:text="タ\nta" />
+                    <TextView style="@style/GridCharStyle" android:text="チ\nchi" />
+                    <TextView style="@style/GridCharStyle" android:text="ツ\ntsu" />
+                    <TextView style="@style/GridCharStyle" android:text="テ\nte" />
+                    <TextView style="@style/GridCharStyle" android:text="ト\nto" />
+
+                    <!-- na-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="na-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ナ\nna" />
+                    <TextView style="@style/GridCharStyle" android:text="ニ\nni" />
+                    <TextView style="@style/GridCharStyle" android:text="ヌ\nnu" />
+                    <TextView style="@style/GridCharStyle" android:text="ネ\nne" />
+                    <TextView style="@style/GridCharStyle" android:text="ノ\nno" />
+
+                    <!-- ha-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="ha-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ハ\nha" />
+                    <TextView style="@style/GridCharStyle" android:text="ヒ\nhi" />
+                    <TextView style="@style/GridCharStyle" android:text="フ\nfu" />
+                    <TextView style="@style/GridCharStyle" android:text="ヘ\nhe" />
+                    <TextView style="@style/GridCharStyle" android:text="ホ\nho" />
+
+                    <!-- ma-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="ma-row" />
+                    <TextView style="@style/GridCharStyle" android:text="マ\nma" />
+                    <TextView style="@style/GridCharStyle" android:text="ミ\nmi" />
+                    <TextView style="@style/GridCharStyle" android:text="ム\nmu" />
+                    <TextView style="@style/GridCharStyle" android:text="メ\nme" />
+                    <TextView style="@style/GridCharStyle" android:text="モ\nmo" />
+
+                    <!-- ya-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="ya-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ヤ\nya" />
+                    <TextView style="@style/GridCharStyle" android:textColor="#CCCCCC" android:text="イ\ni" />
+                    <TextView style="@style/GridCharStyle" android:text="ユ\nyu" />
+                    <TextView style="@style/GridCharStyle" android:textColor="#CCCCCC" android:text="エ\ne" />
+                    <TextView style="@style/GridCharStyle" android:text="ヨ\nyo" />
+
+                    <!-- ra-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="ra-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ラ\nra" />
+                    <TextView style="@style/GridCharStyle" android:text="リ\nri" />
+                    <TextView style="@style/GridCharStyle" android:text="ル\nru" />
+                    <TextView style="@style/GridCharStyle" android:text="レ\nre" />
+                    <TextView style="@style/GridCharStyle" android:text="ロ\nro" />
+
+                    <!-- wa-row -->
+                    <TextView style="@style/GridLabelStyle" android:text="wa-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ワ\nwa" />
+                    <TextView style="@style/GridCharStyle" android:textColor="#CCCCCC" android:text="イ\ni" />
+                    <TextView style="@style/GridCharStyle" android:textColor="#CCCCCC" android:text="ウ\nu" />
+                    <TextView style="@style/GridCharStyle" android:textColor="#CCCCCC" android:text="エ\ne" />
+                    <TextView style="@style/GridCharStyle" android:text="ヲ\no" />
+
+                    <!-- n cell -->
+                    <TextView style="@style/GridCharStyle" android:layout_columnSpan="6" android:text="ン\nn" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- YOON Section -->
+            <TextView
+                style="@style/SectionHeaderStyle"
+                android:text="yōon" />
+
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="3">
+                    <TextView style="@style/GridCharStyle" android:text="キャ\nkya" />
+                    <TextView style="@style/GridCharStyle" android:text="キュ\nkyu" />
+                    <TextView style="@style/GridCharStyle" android:text="キョ\nkyo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="シャ\nsha" />
+                    <TextView style="@style/GridCharStyle" android:text="シュ\nshu" />
+                    <TextView style="@style/GridCharStyle" android:text="ショ\nsho" />
+
+                    <TextView style="@style/GridCharStyle" android:text="チャ\ncha" />
+                    <TextView style="@style/GridCharStyle" android:text="チュ\nchu" />
+                    <TextView style="@style/GridCharStyle" android:text="チョ\ncho" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ニャ\nnya" />
+                    <TextView style="@style/GridCharStyle" android:text="ニュ\nnyu" />
+                    <TextView style="@style/GridCharStyle" android:text="ニョ\nnyo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ヒャ\nhya" />
+                    <TextView style="@style/GridCharStyle" android:text="ヒゅ\nhyu" />
+                    <TextView style="@style/GridCharStyle" android:text="ヒょ\nhyo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ミャ\nmya" />
+                    <TextView style="@style/GridCharStyle" android:text="ミュ\nmyu" />
+                    <TextView style="@style/GridCharStyle" android:text="ミょ\nmyo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="リャ\nrya" />
+                    <TextView style="@style/GridCharStyle" android:text="リュ\nryu" />
+                    <TextView style="@style/GridCharStyle" android:text="リョ\nryo" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- DAKUON Section -->
+            <TextView
+                style="@style/SectionHeaderStyle"
+                android:text="dakuon" />
+
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="6">
+                    <TextView style="@style/GridLabelStyle" android:text="ga-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ガ\nga" />
+                    <TextView style="@style/GridCharStyle" android:text="ギ\ngi" />
+                    <TextView style="@style/GridCharStyle" android:text="グ\ngu" />
+                    <TextView style="@style/GridCharStyle" android:text="ゲ\nge" />
+                    <TextView style="@style/GridCharStyle" android:text="ゴ\ngo" />
+
+                    <TextView style="@style/GridLabelStyle" android:text="za-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ザ\nza" />
+                    <TextView style="@style/GridCharStyle" android:text="ジ\nji" />
+                    <TextView style="@style/GridCharStyle" android:text="ズ\nzu" />
+                    <TextView style="@style/GridCharStyle" android:text="ゼ\nze" />
+                    <TextView style="@style/GridCharStyle" android:text="ゾ\nzo" />
+
+                    <TextView style="@style/GridLabelStyle" android:text="da-row" />
+                    <TextView style="@style/GridCharStyle" android:text="ダ\nda" />
+                    <TextView style="@style/GridCharStyle" android:text="ヂ\nji" />
+                    <TextView style="@style/GridCharStyle" android:text="ヅ\nzu" />
+                    <TextView style="@style/GridCharStyle" android:text="デ\nde" />
+                    <TextView style="@style/GridCharStyle" android:text="ド\ndo" />
+
+                    <TextView style="@style/GridLabelStyle" android:text="ba-row" />
+                    <TextView style="@style/GridCharStyle" android:text="バ\nba" />
+                    <TextView style="@style/GridCharStyle" android:text="ビ\nbi" />
+                    <TextView style="@style/GridCharStyle" android:text="ブ\nbu" />
+                    <TextView style="@style/GridCharStyle" android:text="ベ\nbe" />
+                    <TextView style="@style/GridCharStyle" android:text="ボ\nbo" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- HAN-DAKUON Section -->
+            <TextView
+                style="@style/SectionHeaderStyle"
+                android:text="han-dakuon" />
+
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="6">
+                    <TextView style="@style/GridLabelStyle" android:text="pa-row" />
+                    <TextView style="@style/GridCharStyle" android:text="パ\npa" />
+                    <TextView style="@style/GridCharStyle" android:text="ピ\npi" />
+                    <TextView style="@style/GridCharStyle" android:text="プ\npu" />
+                    <TextView style="@style/GridCharStyle" android:text="ペ\npe" />
+                    <TextView style="@style/GridCharStyle" android:text="ポ\npo" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- YOON DAKUON -->
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="3">
+                    <TextView style="@style/GridCharStyle" android:text="ギャ\ngya" />
+                    <TextView style="@style/GridCharStyle" android:text="ギュ\ngyu" />
+                    <TextView style="@style/GridCharStyle" android:text="ギョ\ngyo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ジャ\nja" />
+                    <TextView style="@style/GridCharStyle" android:text="ジュ\nju" />
+                    <TextView style="@style/GridCharStyle" android:text="ジョ\njo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ヂャ\nja" />
+                    <TextView style="@style/GridCharStyle" android:text="ヂュ\nju" />
+                    <TextView style="@style/GridCharStyle" android:text="ヂョ\njo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ビャ\nbya" />
+                    <TextView style="@style/GridCharStyle" android:text="ビュ\nbyu" />
+                    <TextView style="@style/GridCharStyle" android:text="ビョ\nbyo" />
+
+                    <TextView style="@style/GridCharStyle" android:text="ピャ\npya" />
+                    <TextView style="@style/GridCharStyle" android:text="ピュ\npyu" />
+                    <TextView style="@style/GridCharStyle" android:text="ピョ\npyo" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- ADDITIONAL LETTERS -->
+            <TextView
+                style="@style/SectionHeaderStyle"
+                android:text="additional letters for foreign sounds" />
+
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="6">
+                   <TextView style="@style/GridCharStyle" android:text="ヴ\nv" />
+                   <TextView style="@style/GridCharStyle" android:text="ア\na" />
+                   <TextView style="@style/GridCharStyle" android:text="イ\ni" />
+                   <TextView style="@style/GridCharStyle" android:text="ウ\nu" />
+                   <TextView style="@style/GridCharStyle" android:text="エ\ne" />
+                   <TextView style="@style/GridCharStyle" android:text="オ\no" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- SOKUON Section -->
+            <TextView
+                style="@style/SectionHeaderStyle"
+                android:text="sokuon" />
+
+            <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="1">
+                    <TextView style="@style/GridCharStyle" android:text="ッ\npause (no sound)" />
+                </GridLayout>
+            </androidx.cardview.widget.CardView>
+
         </LinearLayout>
     </ScrollView>
 

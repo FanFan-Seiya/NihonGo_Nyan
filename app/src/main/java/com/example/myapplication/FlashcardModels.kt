@@ -29,4 +29,5 @@ data class QuizResult(
 
 object DeckManager {
     val savedDecks = mutableListOf<Deck>()
+    val quizHistory = mutableListOf<QuizResult>()
 }

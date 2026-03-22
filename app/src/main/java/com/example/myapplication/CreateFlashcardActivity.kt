@@ -8,6 +8,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.LinearLayout
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
@@ -25,10 +26,29 @@ class CreateFlashcardActivity : AppCompatActivity() {
         
         bottomNavigation.selectedItemId = R.id.nav_decks
 
+        fun setupRemoveButton(cardView: View) {
+            val btnRemove = cardView.findViewById<View>(R.id.btnRemoveCard)
+            btnRemove.setOnClickListener {
+                AlertDialog.Builder(this)
+                    .setMessage("Remove this character?")
+                    .setPositiveButton("Yes") { _, _ ->
+                        flashcardListContainer.removeView(cardView)
+                    }
+                    .setNegativeButton("Cancel", null)
+                    .show()
+            }
+        }
+
         fun addNewCardItem() {
             val inflater = LayoutInflater.from(this)
             val newCardView = inflater.inflate(R.layout.item_flashcard_input, flashcardListContainer, false)
+            setupRemoveButton(newCardView)
             flashcardListContainer.addView(newCardView)
+        }
+
+        // Setup the initial card that is included in the layout
+        if (flashcardListContainer.childCount > 0) {
+            setupRemoveButton(flashcardListContainer.getChildAt(0))
         }
 
         btnAddCard.setOnClickListener {
@@ -83,7 +103,6 @@ class CreateFlashcardActivity : AppCompatActivity() {
         btnCreatePractice.setOnClickListener {
             val newDeck = validateAndGetDeck()
             if (newDeck != null) {
-                // For now, just save and go to list. Could implement practice mode later.
                 DeckManager.savedDecks.add(newDeck)
                 startActivity(Intent(this, DeckListActivity::class.java))
                 finish()

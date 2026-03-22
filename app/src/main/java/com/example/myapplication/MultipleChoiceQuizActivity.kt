@@ -108,6 +108,10 @@ class MultipleChoiceQuizActivity : AppCompatActivity() {
             wrongAnswers = shuffledCards.size - score,
             answersList = userAnswers
         )
+        
+        // Save to history
+        DeckManager.quizHistory.add(result)
+
         val intent = Intent(this, QuizResultActivity::class.java)
         intent.putExtra("QUIZ_RESULT", result)
         intent.putExtra("SELECTED_DECK", deck) // Pass deck back for retry

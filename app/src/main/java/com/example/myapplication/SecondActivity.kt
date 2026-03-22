@@ -41,15 +41,15 @@ class SecondActivity : AppCompatActivity() {
         
         // Quiz Section
         findViewById<Button>(R.id.btnQuizMode).setOnClickListener { startActivity(quizIntent) }
-        findViewById<Button>(R.id.viewButton1).setOnClickListener { Toast.makeText(this, "Viewing Result...", Toast.LENGTH_SHORT).show() }
-        findViewById<Button>(R.id.viewButton2).setOnClickListener { Toast.makeText(this, "Viewing Result...", Toast.LENGTH_SHORT).show() }
         
         updateRecentDecks()
+        updateRecentQuizzes()
     }
 
     override fun onResume() {
         super.onResume()
         updateRecentDecks()
+        updateRecentQuizzes()
     }
 
     private fun updateRecentDecks() {
@@ -92,6 +92,69 @@ class SecondActivity : AppCompatActivity() {
                 }
             } else {
                 layout2.visibility = View.GONE
+            }
+        }
+    }
+
+    private fun updateRecentQuizzes() {
+        val recentQuizzes = DeckManager.quizHistory.takeLast(3).reversed()
+        
+        val layout1 = findViewById<View>(R.id.layoutQuiz1)
+        val layout2 = findViewById<View>(R.id.layoutQuiz2)
+        val layout3 = findViewById<View>(R.id.layoutQuiz3)
+        val tvNoQuizzes = findViewById<TextView>(R.id.tvNoQuizzes)
+
+        val tvName1 = findViewById<TextView>(R.id.tvQuizName1)
+        val btnView1 = findViewById<Button>(R.id.viewButton1)
+        
+        val tvName2 = findViewById<TextView>(R.id.tvQuizName2)
+        val btnView2 = findViewById<Button>(R.id.viewButton2)
+        
+        val tvName3 = findViewById<TextView>(R.id.tvQuizName3)
+        val btnView3 = findViewById<Button>(R.id.viewButton3)
+
+        if (recentQuizzes.isEmpty()) {
+            layout1.visibility = View.GONE
+            layout2.visibility = View.GONE
+            layout3.visibility = View.GONE
+            tvNoQuizzes.visibility = View.VISIBLE
+        } else {
+            tvNoQuizzes.visibility = View.GONE
+            
+            // Quiz 1
+            layout1.visibility = View.VISIBLE
+            tvName1.text = recentQuizzes[0].deckName
+            btnView1.setOnClickListener {
+                val intent = Intent(this, QuizResultActivity::class.java)
+                intent.putExtra("QUIZ_RESULT", recentQuizzes[0])
+                // Note: We'd need to store the Deck object in QuizResult if we wanted retry to work from here
+                startActivity(intent)
+            }
+            
+            // Quiz 2
+            if (recentQuizzes.size > 1) {
+                layout2.visibility = View.VISIBLE
+                tvName2.text = recentQuizzes[1].deckName
+                btnView2.setOnClickListener {
+                    val intent = Intent(this, QuizResultActivity::class.java)
+                    intent.putExtra("QUIZ_RESULT", recentQuizzes[1])
+                    startActivity(intent)
+                }
+            } else {
+                layout2.visibility = View.GONE
+            }
+
+            // Quiz 3
+            if (recentQuizzes.size > 2) {
+                layout3.visibility = View.VISIBLE
+                tvName3.text = recentQuizzes[2].deckName
+                btnView3.setOnClickListener {
+                    val intent = Intent(this, QuizResultActivity::class.java)
+                    intent.putExtra("QUIZ_RESULT", recentQuizzes[2])
+                    startActivity(intent)
+                }
+            } else {
+                layout3.visibility = View.GONE
             }
         }
     }
