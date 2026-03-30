@@ -86,6 +86,8 @@
                     android:textColorHint="#5E5E5E" />
 
                 <!-- Flashcard List Container -->
+
+                <!-- Action Buttons -->
                 <LinearLayout
                     android:id="@+id/flashcardListContainer"
                     android:layout_width="match_parent"
@@ -95,7 +97,6 @@
                     <include layout="@layout/item_flashcard_input" />
                 </LinearLayout>
 
-                <!-- Action Buttons -->
                 <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/btnAddCard"
                     android:layout_width="match_parent"
