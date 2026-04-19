@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lesson_katakana_title">Lesson 4: Katakana Intro</string>
+    <string name="lesson_katakana_desc">Introduction to Katakana with English loanwords.</string>
+
+    <string name="lesson_katakana_intro" translatable="false">
+        Welcome to Katakana!
+        \n\nKatakana 「カタカナ」 is used primarily for foreign loanwords, names of foreign countries, and scientific names.
+        \n\nIf you know English, Katakana will be your best friend because many words sound very similar to their English counterparts!
+    </string>
+
+    <string name="lesson_katakana_row_a" translatable="false">
+        The vowel row (ア, イ, ウ, エ, オ) follows the same sounds as Hiragana.
+        \n\nExample: 「Amerika」 (アメリカ) - America
+    </string>
+
+    <string name="lesson_katakana_row_ka" translatable="false">
+        The "Ka" row (カ, キ, ク, ケ, コ).
+        \n\nExample: 「Kamera」 (カメラ) - Camera
+    </string>
+
+    <string name="lesson_katakana_row_sa" translatable="false">
+        The "Sa" row (サ, シ, ス, セ, ソ). Note that シ is "shi".
+        \n\nExample: 「Sofa」 (ソファ) - Sofa
+    </string>
+
+    <string name="lesson_katakana_row_ta" translatable="false">
+        The "Ta" row (タ, チ, ツ, テ, ト). Remember チ is "chi" and ツ is "tsu".
+        \n\nExample: 「Toire」 (トイレ) - Toilet (from French/English)
+    </string>
+
+    <string name="lesson_katakana_row_na" translatable="false">
+        The "Na" row (ナ, ニ, ヌ, ネ, ノ).
+        \n\nExample: 「Naito」 (ナイト) - Night
+    </string>
+
+    <string name="lesson_katakana_row_ha" translatable="false">
+        The "Ha" row (ハ, ヒ, フ, ヘ, ホ). Remember フ is "fu".
+        \n\nExample: 「Hamu」 (ハム) - Ham
+    </string>
+
+    <string name="lesson_katakana_row_ma" translatable="false">
+        The "Ma" row (マ, ミ, ム, メ, モ).
+        \n\nExample: 「Miruku」 (ミルク) - Milk
+    </string>
+
+    <string name="lesson_katakana_row_ya" translatable="false">
+        The "Ya" row (ヤ, ユ, ヨ).
+        \n\nExample: 「Yoga」 (ヨガ) - Yoga
+    </string>
+
+    <string name="lesson_katakana_row_ra" translatable="false">
+        The "Ra" row (ラ, リ, ル, レ, ロ).
+        \n\nExample: 「Rajio」 (ラジオ) - Radio
+    </string>
+
+    <string name="lesson_katakana_row_wa_n" translatable="false">
+        The "Wa" row (ワ, ヲ) and "n" (ン).
+        \n\nExample: 「Wain」 (ワイン) - Wine
+    </string>
+</resources>

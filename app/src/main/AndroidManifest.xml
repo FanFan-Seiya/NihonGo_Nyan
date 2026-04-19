@@ -36,6 +36,9 @@
             android:name=".LessonListActivity"
             android:exported="false" />
         <activity
+            android:name=".LessonContentActivity"
+            android:exported="false" />
+        <activity
             android:name=".QuizModeActivity"
             android:exported="false" />
         <activity

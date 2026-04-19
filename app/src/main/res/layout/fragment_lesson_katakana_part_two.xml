@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Intro -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upgraded Katakana"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/lesson_katakana_2_intro"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Mnemonics -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#3E6868"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_katakana_2_mnemonics"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- G-Row -->
+        <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="5">
+                    <TextView style="@style/GridCharStyle" android:text="ガ\n(ga)" />
+                    <TextView style="@style/GridCharStyle" android:text="ギ\n(gi)" />
+                    <TextView style="@style/GridCharStyle" android:text="グ\n(gu)" />
+                    <TextView style="@style/GridCharStyle" android:text="ゲ\n(ge)" />
+                    <TextView style="@style/GridCharStyle" android:text="ゴ\n(go)" />
+                </GridLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/lesson_katakana_2_g_row" android:textColor="#333333" android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Z-Row -->
+        <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="5">
+                    <TextView style="@style/GridCharStyle" android:text="ザ\n(za)" />
+                    <TextView style="@style/GridCharStyle" android:text="ジ\n(ji)" />
+                    <TextView style="@style/GridCharStyle" android:text="ズ\n(zu)" />
+                    <TextView style="@style/GridCharStyle" android:text="ゼ\n(ze)" />
+                    <TextView style="@style/GridCharStyle" android:text="ゾ\n(zo)" />
+                </GridLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/lesson_katakana_2_z_row" android:textColor="#333333" android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- D-Row -->
+        <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="5">
+                    <TextView style="@style/GridCharStyle" android:text="ダ\n(da)" />
+                    <TextView style="@style/GridCharStyle" android:text="ヂ\n(ji)" />
+                    <TextView style="@style/GridCharStyle" android:text="ヅ\n(zu)" />
+                    <TextView style="@style/GridCharStyle" android:text="デ\n(de)" />
+                    <TextView style="@style/GridCharStyle" android:text="ド\n(do)" />
+                </GridLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/lesson_katakana_2_d_row" android:textColor="#333333" android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- B-Row -->
+        <androidx.cardview.widget.CardView style="@style/ChartCardStyle">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="5">
+                    <TextView style="@style/GridCharStyle" android:text="バ\n(ba)" />
+                    <TextView style="@style/GridCharStyle" android:text="ビ\n(bi)" />
+                    <TextView style="@style/GridCharStyle" android:text="ブ\n(bu)" />
+                    <TextView style="@style/GridCharStyle" android:text="ベ\n(be)" />
+                    <TextView style="@style/GridCharStyle" android:text="ボ\n(bo)" />
+                </GridLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/lesson_katakana_2_b_row" android:textColor="#333333" android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- P-Row -->
+        <androidx.cardview.widget.CardView style="@style/ChartCardStyle" android:layout_marginBottom="32dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+                <GridLayout style="@style/HiraganaGridStyle" android:columnCount="5">
+                    <TextView style="@style/GridCharStyle" android:text="パ\n(pa)" />
+                    <TextView style="@style/GridCharStyle" android:text="ピ\n(pi)" />
+                    <TextView style="@style/GridCharStyle" android:text="プ\n(pu)" />
+                    <TextView style="@style/GridCharStyle" android:text="ペ\n(pe)" />
+                    <TextView style="@style/GridCharStyle" android:text="ポ\n(po)" />
+                </GridLayout>
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:padding="12dp" android:text="@string/lesson_katakana_2_p_row" android:textColor="#333333" android:textSize="14sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lesson_katakana_2_title">Lesson 6: Katakana Part 2</string>
+    <string name="lesson_katakana_2_desc">Adding tenten and maru to make foreign sounds.</string>
+
+    <string name="lesson_katakana_2_intro" translatable="false">
+        Good news! The "upgrade" system you learned for Hiragana works exactly the same way here!
+        \n\nJust like before, adding two small strokes (tenten) or a tiny bubble (maru) changes the sound.
+        Since Katakana is mostly for foreign loanwords, these "voiced" sounds are everywhere from food brands to tech terms!
+    </string>
+
+    <string name="lesson_katakana_2_mnemonics" translatable="false">
+        Let\'s refresh your memory with these tricks:
+        \n\n- K becomes G
+        \n- S becomes Z
+        \n- T becomes D
+        \n- H becomes B
+        \n- H becomes P
+
+        \n\nRemember that the same rule applies here like in the Hiragana lesson.
+        \nThat little maru bubble. Just remember that bubbles \"pop\" as in the letter \"p\"
+    </string>
+
+    <string name="lesson_katakana_2_g_row" translatable="false">
+        The G-Row (Heavy K sounds)
+        \nガ ga | ギ gi | グ gu | ゲ ge | ゴ go
+        \n\nEnglish Example: Gasu (ガス) - Gas
+    </string>
+
+    <string name="lesson_katakana_2_z_row" translatable="false">
+        The Z-Row (Heavy S sounds)
+        \nザ za | ジ ji | ズ zu | ゼ ze | ゾ zo
+        \n\nEnglish Example: Jūsu (ジュース) - Juice
+    </string>
+
+    <string name="lesson_katakana_2_d_row" translatable="false">
+        The D-Row (Heavy T sounds)
+        \nダ da | ヂ ji | ヅ zu | デ de | ド do
+        \n\nEnglish Example: Dansu (ダンス) - Dance
+    </string>
+
+    <string name="lesson_katakana_2_b_row" translatable="false">
+        The B-Row (Heavy H sounds)
+        \nバ ba | ビ bi | ブ bu | ベ be | ボ bo
+        \n\nEnglish Example: Baggu (バッグ) - Bag
+    </string>
+
+    <string name="lesson_katakana_2_p_row" translatable="false">
+        The P-Row (H Row + Maru Bubble)
+        \nパ pa | ピ pi | プ pu | ペ pe | ポ po
+        \n\nEnglish Example: Pajama (パジャマ) - Pajamas
+    </string>
+</resources>

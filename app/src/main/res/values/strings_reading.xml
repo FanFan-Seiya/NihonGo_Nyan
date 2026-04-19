@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lesson_reading_title">Lesson 8: Reading Basics</string>
+    <string name="lesson_reading_desc">Learn how to read Japanese sentences and words.</string>
+
+    <string name="reading_intro_title">Introduction</string>
+    <string name="reading_intro_text">Reading Japanese is a rewarding journey that combines three different scripts. Once you know the characters, the next step is understanding how they flow together to form words and sentences. This lesson will guide you through the fundamental rules of Japanese reading.</string>
+
+    <string name="reading_direction_title">Reading Direction</string>
+    <string name="reading_direction_text">In modern Japanese, text is often written horizontally from left to right, just like English. however, you will also see traditional vertical writing, which is read from top to bottom, starting from the rightmost column.</string>
+
+    <string name="reading_basic_words_title">Basic Words</string>
+    <string name="reading_basic_words_desc">Here are some common words written in Hiragana and Katakana. Try reading them aloud!</string>
+
+    <string name="reading_double_consonant_title">Double Consonants (Sokuon)</string>
+    <string name="reading_double_consonant_text">The small "っ" (tsu) or "ッ" indicates a double consonant. It acts as a brief pause in the breath before the next sound. \n\nExample: \nがっこう (Gakkou) - School \nコップ (Koppu) - Cup</string>
+
+    <string name="reading_long_vowel_title">Long Vowels</string>
+    <string name="reading_long_vowel_text">Vowels can be extended to change a word\'s meaning. In Hiragana, we add another vowel (usually "u" or "i"). In Katakana, we use a long dash "ー". \n\nExample: \nおとうさん (Otousan) - Father \nケーキ (Keeki) - Cake</string>
+
+    <string name="reading_contracted_title">Contracted Sounds (Yōon)</string>
+    <string name="reading_contracted_text">Small versions of ya, yu, and yo (ゃ, ゅ, ょ) combine with certain characters to create a single syllable. \n\nExample: \nチャンス (Chansu) - Chance \nきょう (Kyou) - Today</string>
+
+    <string name="reading_particles_title">Essential Particles</string>
+    <string name="reading_particles_text">Particles are small markers that show the relationship between words in a sentence. Note that some change their pronunciation when used as particles.</string>
+
+    <string name="reading_particle_wa_title">は (Wa) - Topic Marker</string>
+    <string name="reading_particle_wa_text">Though written as "ha", it is pronounced "wa" when marking the topic. \nExample: ねこ は かわいい (Neko wa kawaii) - Cats are cute.</string>
+
+    <string name="reading_particle_e_title">へ (E) - Direction Marker</string>
+    <string name="reading_particle_e_text">Though written as "he", it is pronounced "e" when indicating direction. \nExample: とうきょう へ いく (Toukyou e iku) - Go to Tokyo.</string>
+
+    <string name="reading_particle_wo_title">を (Wo/O) - Object Marker</string>
+    <string name="reading_particle_wo_text">This character is exclusively used as a particle to mark the direct object of a verb. \nExample: みず を のむ (Mizu o nomu) - Drink water.</string>
+</resources>

@@ -19,4 +19,100 @@
     <string name="btn_alphabet">Alphabet</string>
     <string name="header_lesson_list">LESSON LIST</string>
     <string name="btn_view_all">View All</string>
+
+    <string name="lesson_hiragana_paragraph_1" translatable="false">
+        Welcome to the first ever lesson in our app!
+        \n\nYou will be learning the basics of Hiragana! 「ひらがな」
+        \n\nHiragana is one of the three main writing systems in Japanese or Nihongo. The other two are Katakana and Kanji.
+        \n\nHiragana → basic sounds and grammar
+        \nKatakana → foreign words
+        \nKanji → complex characters with meaning
+        \n\nLearning how to read Hiragana will bring you one-third of the way to reading Japanese and that is no joke.
+        \n\nLet\'s get started!
+    </string>
+
+    <string name="lesson_hiragana_paragraph_2" translatable="false">
+        We will be focusing on the basic sounds of Hiragana. These are actually familiar if you know English!
+        \nThese are A, E, I, O, and U. The only difference is the arrangement. In Japanese, these go in this order:
+        \n\nあ い う え お
+        \nor
+        \nA\t\tI\t\tU\t\tE\t\tO
+        \n\nThis is known as the A or あ row. This will be your best reference for the sequence of the Hiragana alphabet.
+    </string>
+
+    <string name="lesson_hiragana_paragraph_ka" translatable="false">
+        The \"Ka\" row (か、き、く、け、こ) is the second row of the Hiragana chart. It is formed by adding the \"k\" sound to the vowels. This is one of the most common rows you will encounter in many basic words like \"kami\" (paper) or \"koko\" (here).
+    </string>
+
+    <string name="lesson_hiragana_paragraph_sa" translatable="false">
+        The \"Sa\" row (さ、し、す、せ、そ) introduces the \"s\" sound. A key thing to remember is that \"si\" is written and pronounced as \"shi\" (し). It sounds like the \"she\" in \"sheep\".
+    </string>
+
+    <string name="lesson_hiragana_paragraph_ta" translatable="false">
+        The \"Ta\" row (た、ち、つ、て、と) introduces the \"t\" sound. This row has two unique pronunciations: \"ti\" becomes \"chi\" (ち) as in \"cheese\", and \"tu\" becomes \"tsu\" (つ) as in \"tsunami\".
+    </string>
+
+    <string name="lesson_hiragana_paragraph_na" translatable="false">
+        The \"Na\" row (な、に、ぬ、ね、の) follows the standard pattern of adding \"n\" to the vowels. This row is used in many common particles like \"na\" and \"ni\", and words like \"neko\" (cat).
+    </string>
+
+    <!-- Hiragana Part 2 Strings -->
+    <string name="lesson_hiragana_2_intro" translatable="false">
+        Welcome to Hiragana Part 2!
+        \n\nIn this lesson, we will cover the remaining characters of the basic Hiragana chart. These include the Ha, Ma, Ra, Ya and Wa rows, along with the single sound \"n\".
+    </string>
+
+    <string name="lesson_hiragana_paragraph_ha" translatable="false">
+        The \"Ha\" row (は、ひ、ふ、へ、ほ) introduces the \"h\" sound. Note that \"hu\" is pronounced as \"fu\" (ふ), like blowing out a candle.
+    </string>
+
+    <string name="lesson_hiragana_paragraph_ma" translatable="false">
+        The \"Ma\" row (ま、み、む、め、も) is straightforward, combining the \"m\" sound with the five vowels.
+    </string>
+
+    <string name="lesson_hiragana_paragraph_ya" translatable="false">
+        The \"Ya\" row (や、ゆ、よ) only has three characters. They are formed with the \"y\" sound.
+    </string>
+
+    <string name="lesson_hiragana_paragraph_ra" translatable="false">
+        For (ら、り、る、れ、ろ), your tongue should flick the roof of your mouth once, very quickly, just behind your front teeth.
+        It’s not a full \“r\” sound, there’s no curling or tension. It’s more like a light tap and release.
+    </string>
+
+    <string name="lesson_hiragana_paragraph_wa_n" translatable="false">
+        Finally, we have the \"Wa\" row (わ、を) and the single consonant \"n\" (ん).
+        \n\n\"Wo\" (を) is primarily used as a grammatical particle and is often pronounced just like \"o\".
+        \n\n\"n\" (ん) is the only Hiragana character that doesn\'t end in a vowel. It can also be pronounced
+        as the letter \"m\"\ sound in some words.
+    </string>
+
+    <!-- Special Characters Strings -->
+    <string name="lesson_special_intro" translatable="false">
+        Beyond the basic Hiragana and Katakana charts, Japanese uses several special characters and punctuation marks that are essential for reading and writing correctly.
+    </string>
+
+    <string name="lesson_special_v_vu" translatable="false">
+        The character ヴ is used in Katakana to represent the \"V\" sound, which doesn\'t exist in native Japanese. It is often combined with small vowels: ヴァ (va), ヴィ (vi), ヴ (vu), ヴェ (ve), ヴォ (vo).
+    </string>
+
+    <string name="lesson_special_small_u" translatable="false">
+        The small ぅ (u) is less common than other small vowels but can be used in certain loanwords or to extend the sound of a preceding character in a stylized way, often in manga or informal speech.
+    </string>
+
+    <string name="lesson_special_chouonpu" translatable="false">
+        The horizontal bar ― or ー (Chōonpu) is used to indicate a long vowel sound. In Katakana, it is extremely common (e.g., ケーキ - kēki/cake). In Hiragana, long vowels are usually written with extra vowels, but the bar is sometimes seen in informal writing or signs.
+    </string>
+
+    <string name="lesson_special_wave" translatable="false">
+        The wave dash ～ (Nami dasshu) is used to indicate a range (like \"from... to...\") or to show that a sound is being drawn out in a friendly or sing-song tone at the end of a sentence.
+    </string>
+
+    <string name="lesson_special_exclamation_question" translatable="false">
+        The exclamation mark ！ and question mark ？ are used just like in English, though traditional Japanese often uses the particle 「か」 at the end of a sentence instead of a question mark.
+    </string>
+
+    <string name="lesson_special_quotes" translatable="false">
+        Japanese quotation marks are 「 」 (Kagi kakko). While English-style double quotes \" \" are also used (especially in digital media), the Japanese brackets are much more common in books and formal writing.
+    </string>
+
 </resources>

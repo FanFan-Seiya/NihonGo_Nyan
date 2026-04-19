@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Intro Paragraph -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Introduction"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/lesson_hiragana_2_intro"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ha-Row Grid -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="5">
+
+                <TextView style="@style/GridHeaderStyle" android:text="a" />
+                <TextView style="@style/GridHeaderStyle" android:text="i" />
+                <TextView style="@style/GridHeaderStyle" android:text="u" />
+                <TextView style="@style/GridHeaderStyle" android:text="e" />
+                <TextView style="@style/GridHeaderStyle" android:text="o" />
+
+                <TextView style="@style/GridCharStyle" android:text="は\n(ha)" />
+                <TextView style="@style/GridCharStyle" android:text="ひ\n(hi)" />
+                <TextView style="@style/GridCharStyle" android:text="ふ\n(fu)" />
+                <TextView style="@style/GridCharStyle" android:text="へ\n(he)" />
+                <TextView style="@style/GridCharStyle" android:text="ほ\n(ho)" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ha-Row Explanation -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_hiragana_paragraph_ha"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ma-Row Grid -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="5">
+
+                <TextView style="@style/GridHeaderStyle" android:text="a" />
+                <TextView style="@style/GridHeaderStyle" android:text="i" />
+                <TextView style="@style/GridHeaderStyle" android:text="u" />
+                <TextView style="@style/GridHeaderStyle" android:text="e" />
+                <TextView style="@style/GridHeaderStyle" android:text="o" />
+
+                <TextView style="@style/GridCharStyle" android:text="ま\n(ma)" />
+                <TextView style="@style/GridCharStyle" android:text="み\n(mi)" />
+                <TextView style="@style/GridCharStyle" android:text="む\n(mu)" />
+                <TextView style="@style/GridCharStyle" android:text="め\n(me)" />
+                <TextView style="@style/GridCharStyle" android:text="も\n(mo)" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ma-Row Explanation -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_hiragana_paragraph_ma"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ra-Row Grid -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="5">
+
+                <TextView style="@style/GridHeaderStyle" android:text="a" />
+                <TextView style="@style/GridHeaderStyle" android:text="i" />
+                <TextView style="@style/GridHeaderStyle" android:text="u" />
+                <TextView style="@style/GridHeaderStyle" android:text="e" />
+                <TextView style="@style/GridHeaderStyle" android:text="o" />
+
+                <TextView style="@style/GridCharStyle" android:text="ら\n(ra)" />
+                <TextView style="@style/GridCharStyle" android:text="り\n(ri)" />
+                <TextView style="@style/GridCharStyle" android:text="る\n(ru)" />
+                <TextView style="@style/GridCharStyle" android:text="れ\n(re)" />
+                <TextView style="@style/GridCharStyle" android:text="ろ\n(ro)" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ra-Row Explanation -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_hiragana_paragraph_ra"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ya-Row Grid -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="3">
+
+                <TextView style="@style/GridHeaderStyle" android:text="a" />
+                <TextView style="@style/GridHeaderStyle" android:text="u" />
+                <TextView style="@style/GridHeaderStyle" android:text="o" />
+
+                <TextView style="@style/GridCharStyle" android:text="や\n(ya)" />
+                <TextView style="@style/GridCharStyle" android:text="ゆ\n(yu)" />
+                <TextView style="@style/GridCharStyle" android:text="よ\n(yo)" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Ya-Row Explanation -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_hiragana_paragraph_ya"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Wa-Row Grid -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="3">
+
+                <TextView style="@style/GridHeaderStyle" android:text="a" />
+                <TextView style="@style/GridHeaderStyle" android:text="o" />
+                <TextView style="@style/GridHeaderStyle" android:text="n" />
+
+                <TextView style="@style/GridCharStyle" android:text="わ\n(wa)" />
+                <TextView style="@style/GridCharStyle" android:text="を\n(wo)" />
+                <TextView style="@style/GridCharStyle" android:text="ん\n(n)" />
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Wa-Row Explanation -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="32dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_hiragana_paragraph_wa_n"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

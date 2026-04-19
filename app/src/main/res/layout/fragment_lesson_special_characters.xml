@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingHorizontal="20dp"
+    android:paddingBottom="24dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Intro Paragraph -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp"
+            android:layout_marginTop="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Special Characters"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:lineSpacingExtra="4dp"
+                    android:text="@string/lesson_special_intro"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Vu Character (1x1 Enlarged) -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="1">
+                <TextView style="@style/GridCharStyle"
+                    android:text="ヴ\n(Vu)"
+                    android:textSize="32sp"
+                    android:padding="24dp"
+                    android:textStyle="bold"/>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_special_v_vu"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Small U (1x1 Enlarged) -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="1">
+                <TextView style="@style/GridCharStyle"
+                    android:text="ぅ\n(Small U)"
+                    android:textSize="32sp"
+                    android:padding="24dp"
+                    android:textStyle="bold"/>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_special_small_u"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Long Vowel (Grouped 2x1) -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="2">
+                <TextView style="@style/GridCharStyle"
+                    android:text="―\n(Long Vowel)"
+                    android:textSize="24sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+                <TextView style="@style/GridCharStyle"
+                    android:text="ー\n(Long Vowel)"
+                    android:textSize="24sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_special_chouonpu"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Wave Dash (1x1 Enlarged) -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="1">
+                <TextView style="@style/GridCharStyle"
+                    android:text="～\n(Wave Dash)"
+                    android:textSize="32sp"
+                    android:padding="24dp"
+                    android:textStyle="bold"/>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_special_wave"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Punctuation (Grouped 2x1) -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="2">
+                <TextView style="@style/GridCharStyle"
+                    android:text="！"
+                    android:textSize="32sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+                <TextView style="@style/GridCharStyle"
+                    android:text="？"
+                    android:textSize="32sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_special_exclamation_question"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Quotation Marks (Grouped 2x1) -->
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            android:layout_marginTop="16dp">
+            <GridLayout
+                style="@style/HiraganaGridStyle"
+                android:columnCount="2">
+                <TextView style="@style/GridCharStyle"
+                    android:text="「\n(Open)"
+                    android:textSize="32sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+                <TextView style="@style/GridCharStyle"
+                    android:text="」\n(Close)"
+                    android:textSize="32sp"
+                    android:padding="20dp"
+                    android:textStyle="bold"/>
+            </GridLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/ChartCardStyle"
+            app:cardBackgroundColor="#252525"
+            app:cardCornerRadius="12dp"
+            android:layout_marginBottom="32dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lesson_special_quotes"
+                    android:textColor="#CCCCCC"
+                    android:textSize="16sp"
+                    android:lineSpacingExtra="4dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lesson_hiragana_3_title">Lesson 3: Hiragana Part 3</string>
+    <string name="lesson_hiragana_3_desc">Learn to make voiced sounds using tenten and maru.</string>
+
+    <string name="lesson_hiragana_3_intro" translatable="false">
+        Okay, get this. You actually don\'t have to learn a bunch of brand new characters right now. We can just upgrade the ones you already know!
+        \n\nSee these two little dashes? We call them \"tenten\". Think of them as a harder first letter. When you add them, the sound gets harder and you get the next row. It\'s so easy to remember once you hear it.
+        \n\nAnd then there\'s this little circle, the \"maru\". It looks exactly like a tiny bubble, right? It\'s a special little rule that only works on the H-row to give it a popping sound.
+    </string>
+
+    <string name="lesson_hiragana_3_mnemonics" translatable="false">
+        Here is the neat trick to remembering all of these. Think of the tenten marks as just a "harder" version of the first letter like \"sa\" to \"za\":
+        \n\n- K becomes G
+        \n- S becomes Z
+        \n- T becomes D
+        \n- H becomes B
+        \n\nNow for that little maru bubble. Just remember that bubbles \"pop\" as in the letter \"p\"
+    </string>
+
+    <string name="lesson_hiragana_3_g_row" translatable="false">
+        The G-Row (K gets heavier)
+        \nが ga | ぎ gi | ぐ gu | げ ge | ご go
+    </string>
+
+    <string name="lesson_hiragana_3_z_row" translatable="false">
+        The Z-Row (S gets heavier)
+        \nざ za | じ ji | ず zu | ぜ ze | ぞ zo
+        \nTip: Notice that \"shi\" becomes \"ji\".
+    </string>
+
+    <string name="lesson_hiragana_3_d_row" translatable="false">
+        The D-Row (T gets heavier)
+        \nだ da | ぢ ji | づ zu | で de | ど do
+        \nTip: \"chi\" and \"tsu\" also become \"ji\" and \"zu\" here, but they are rarely used!
+    </string>
+
+    <string name="lesson_hiragana_3_b_row" translatable="false">
+        The B-Row (H gets heavier)
+        \nば ba | び bi | ぶ bu | べ be | ぼ bo
+    </string>
+
+    <string name="lesson_hiragana_3_p_row" translatable="false">
+        The P-Row (H goes pop!)
+        \nぱ pa | ぴ pi | ぷ pu | ぺ pe | ぽ po
+    </string>
+</resources>

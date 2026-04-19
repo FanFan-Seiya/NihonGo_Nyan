@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lesson_pronunciation_title">Lesson 7: Pronunciation\nBasics</string>
+    <string name="lesson_pronunciation_desc">Master the sounds of Japanese.</string>
+
+    <string name="pron_intro_title">Introduction</string>
+    <string name="pron_intro_text">Japanese pronunciation is relatively straightforward compared to English, but there are some key differences in rhythm and accent that you should know.</string>
+
+    <string name="pron_vowels_title">The Five Vowels</string>
+    <string name="pron_vowels_text">The vowels (A, I, U, E, O) are always pronounced the same way. Unlike English where "a" can sound different in "apple" and "cake", Japanese vowels are consistent.</string>
+
+    <string name="pron_timing_title">Mora and Timing</string>
+    <string name="pron_timing_text">Japanese is a mora-timed language. This means each kana (including the small symbols) takes up roughly the same amount of time to say. This gives Japanese its steady rhythm.</string>
+
+    <string name="pron_consonants_title">Double Consonants</string>
+    <string name="pron_consonants_text">Instead of a "stress accent", Japanese uses "sokuon" (small っ). This indicates a slight pause before the next consonant, effectively doubling it.\nExample: きて (kite - come)\nvs\nきって (kitte - stamp).</string>
+
+    <string name="pron_pitch_title">Pitch Accent</string>
+    <string name="pron_pitch_text">While English uses "stress accent" (loudness), Japanese uses "pitch accent" (high or low tone). The meaning of a word can change depending on which syllable is high or low.</string>
+
+    <string name="pron_vowel_length_title">Vowel Length Matters</string>
+    <string name="pron_vowel_length_text">Changing the length of a vowel can completely change the meaning of a word. \n\nExample: \nおばさん (obasan) - Aunt \nおばあさん (obaasan) - Grandmother</string>
+
+    <string name="pron_n_title">The "n" (ん) Sound</string>
+    <string name="pron_n_text">The kana "ん" is the only consonant that can stand alone. Its pronunciation changes depending on what follows. It can sound like "n", "m", or "ng". For example, when followed by "b" or "p", it is often pronounced as "m".</string>
+</resources>
